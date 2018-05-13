@@ -59,6 +59,70 @@
       l.print();
     }
   }
+  
+  //o/p:-1 2 3 4 5
+   //    after reverse:-
+  //     5 4 3 2 1
+  
+  
+/*//single LinkedList-implementation
+ class Node{
+   int data;
+   Node next;
+ }
+  class LinkedList{
+     Node head=null;
+ //to insert a new value at the given position
+     void insert(int data){
+       Node node=new Node();
+        node.data=data;
+        node.next=null;
+       if(head==null)
+        head=node;
+        else{
+         Node node1=head;
+     while(node1.next!=null){
+         node1=node1.next;
+             }node1.next=node;
+        }
+  }
+  //reverse the LinkedList by Recursion.
+ void reverseByRecursion(Node n){
+     if(n.next==null){
+         head=n;
+         return;
+     }reverseByRecursion(n.next);
+     Node n1=n.next;
+     n1.next=n;
+     n.next=null;
+     
+ }
+
+//to print the data by Recursion.
+   void printByRecursion(Node p ){
+       if(p==null) return;
+       
+       System.out.print(p.data);
+       System.out.print(" ");
+       printByRecursion(p.next);
+        }
+       
+   }
+  public class MyClass{
+    public static void main(String[] args){
+     LinkedList l=new LinkedList();
+     l.insert(1);
+     l.insert(2);
+     l.insert(3);
+      l.insert(4);
+      l.insert(5);
+       l.printByRecursion(l.head);
+       l.reverseByRecursion(l.head);
+       System.out.println();
+      System.out.println("after reverse:-");
+      l.printByRecursion(l.head);
+    }
+  }*/
   //o/p:-1 2 3 4 5
    //    after reverse:-
   //     5 4 3 2 1
